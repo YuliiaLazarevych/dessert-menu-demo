@@ -1,0 +1,101 @@
+/* Загальні стилі */
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fdf6f0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3em;
+  color: #d87c7c;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #a65f5f;
+}
+
+/* Секції меню */
+.menu-section {
+  padding: 60px 20px;
+}
+
+.menu-section h2 {
+  font-size: 2em;
+  color: #d87c7c;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Контейнер карток */
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+/* Окрема картка */
+.menu-item {
+  background-color: #fff8f0;
+  border-radius: 12px;
+  padding: 20px;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.menu-item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.menu-item h3 {
+  margin: 10px 0 5px 0;
+  color: #d87c7c;
+  font-size: 1.2em;
+}
+
+.menu-item p {
+  margin: 0;
+  font-weight: bold;
+  color: #8c5a5a;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #fdf6f0;
+  color: #a65f5f;
+}
+
+/* Адаптивність */
+@media (max-width: 900px) {
+  .menu-items {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-items {
+    flex-direction: column;
+    align-items: center;
+  }
+}
